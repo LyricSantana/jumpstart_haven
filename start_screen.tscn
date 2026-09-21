@@ -1,35 +1,62 @@
 [gd_scene format=3 uid="uid://b15xh3d5udvmy"]
 
+[ext_resource type="Script" uid="uid://cnpi2sgxf6sg3" path="res://start_screen.gd" id="1_5hmx7"]
 [ext_resource type="Texture2D" uid="uid://j70u8w5c026r" path="res://blueNormal.png" id="1_afy8x"]
 [ext_resource type="Texture2D" uid="uid://qm12kw4wpkji" path="res://bluePressed.png" id="2_k1na2"]
 [ext_resource type="Texture2D" uid="uid://74shoglg03xs" path="res://blueHover.png" id="3_vdywr"]
 [ext_resource type="FontFile" uid="uid://ckt83s47banje" path="res://assets/pixelFont.ttf" id="4_k1na2"]
 
-[node name="Node2D" type="Node2D" unique_id=1328812775]
+[node name="StartScreen" type="Control" unique_id=467996177]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5hmx7")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1830852044]
-offset_right = 500.0
-offset_bottom = 300.0
+[node name="ColorRect" type="ColorRect" parent="." unique_id=885648962]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.67, 0.86, 0.96, 1)
 
-[node name="TextureButton" type="TextureButton" parent="." unique_id=335763739]
-custom_minimum_size = Vector2(1, 1)
-offset_left = 150.0
-offset_top = 189.0
-offset_right = 201.0
-offset_bottom = 206.0
+[node name="TextureButton" type="TextureButton" parent="." unique_id=500139215]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -70.0
+offset_top = -27.5
+offset_right = -19.0
+offset_bottom = -10.5
+grow_horizontal = 2
+grow_vertical = 2
 scale = Vector2(4, 4)
-size_flags_horizontal = 4
 texture_normal = ExtResource("1_afy8x")
 texture_pressed = ExtResource("2_k1na2")
 texture_hover = ExtResource("3_vdywr")
 
-[node name="Label" type="Label" parent="TextureButton" unique_id=582057735]
-layout_mode = 0
-offset_left = 6.75
-offset_right = 44.75
-offset_bottom = 13.0
+[node name="Label" type="Label" parent="TextureButton" unique_id=1904526503]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.25
+offset_top = -0.125
+offset_right = -6.75
+offset_bottom = -3.125
+grow_horizontal = 2
+grow_vertical = 2
 mouse_filter = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_k1na2")
-theme_override_font_sizes/font_size = 10
+theme_override_font_sizes/font_size = 11
 text = "Start"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="platformer"
-run/main_scene="uid://dg7dij5vxl23r"
+run/main_scene="uid://b15xh3d5udvmy"
 config/features=PackedStringArray("4.7", "Mobile")
 
 [display]
