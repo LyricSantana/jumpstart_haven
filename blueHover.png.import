@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c05jpux4xhg8o"
-path="res://.godot/imported/tree.png-8c692522fefc680682f97b62acde6a37.ctex"
+uid="uid://74shoglg03xs"
+path="res://.godot/imported/blueHover.png-ebb5a252cc0f3a2c9cac0e8bc73ec361.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tileset/tree.png"
-dest_files=["res://.godot/imported/tree.png-8c692522fefc680682f97b62acde6a37.ctex"]
+source_file="res://blueHover.png"
+dest_files=["res://.godot/imported/blueHover.png-ebb5a252cc0f3a2c9cac0e8bc73ec361.ctex"]
 
 [params]
 

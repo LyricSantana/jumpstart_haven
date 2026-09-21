@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://b15xh3d5udvmy"]
+
+[ext_resource type="Texture2D" uid="uid://j70u8w5c026r" path="res://blueNormal.png" id="1_afy8x"]
+[ext_resource type="Texture2D" uid="uid://qm12kw4wpkji" path="res://bluePressed.png" id="2_k1na2"]
+[ext_resource type="Texture2D" uid="uid://74shoglg03xs" path="res://blueHover.png" id="3_vdywr"]
+[ext_resource type="FontFile" uid="uid://ckt83s47banje" path="res://assets/pixelFont.ttf" id="4_k1na2"]
+
+[node name="Node2D" type="Node2D" unique_id=1328812775]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1830852044]
+offset_right = 500.0
+offset_bottom = 300.0
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=335763739]
+custom_minimum_size = Vector2(1, 1)
+offset_left = 150.0
+offset_top = 189.0
+offset_right = 201.0
+offset_bottom = 206.0
+scale = Vector2(4, 4)
+size_flags_horizontal = 4
+texture_normal = ExtResource("1_afy8x")
+texture_pressed = ExtResource("2_k1na2")
+texture_hover = ExtResource("3_vdywr")
+
+[node name="Label" type="Label" parent="TextureButton" unique_id=582057735]
+layout_mode = 0
+offset_left = 6.75
+offset_right = 44.75
+offset_bottom = 13.0
+mouse_filter = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_k1na2")
+theme_override_font_sizes/font_size = 10
+text = "Start"

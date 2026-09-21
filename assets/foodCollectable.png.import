@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3t1dmyll7itc"
-path="res://.godot/imported/bush.png-f45768c3b9fffc22e033c4320c8c1d12.ctex"
+uid="uid://bp3n4cahusyse"
+path="res://.godot/imported/foodCollectable.png-18ff80a7b061901f1a4ad83f308cef5f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tileset/bush.png"
-dest_files=["res://.godot/imported/bush.png-f45768c3b9fffc22e033c4320c8c1d12.ctex"]
+source_file="res://assets/foodCollectable.png"
+dest_files=["res://.godot/imported/foodCollectable.png-18ff80a7b061901f1a4ad83f308cef5f.ctex"]
 
 [params]
 
