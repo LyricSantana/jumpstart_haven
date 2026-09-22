@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 const SPEED = 100.0
-const JUMP_VELOCITY = -275.0
+const JUMP_VELOCITY = -300.0
 const WALK_SWAP_TIME = 0.15
 const FALL_LIMIT = 300.0
 
@@ -10,6 +10,7 @@ const CAT_NORMAL = preload("res://assets/catNormal1.png")
 const CAT_ALT = preload("res://assets/catNormal2.png")
 
 @onready var sprite: Sprite2D = $Sprite2D
+@onready var collected_label: Label = get_tree().root.get_node("Node/HUD/CollectedLabel")
 
 var walk_timer := 0.0
 var use_alt_sprite := false
@@ -20,7 +21,12 @@ func _ready() -> void:
 	start_position = global_position
 	sprite.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	sprite.centered = true
+	_update_hud()
 	print("Score: %d" % score)
+
+func _update_hud() -> void:
+	if collected_label != null:
+		collected_label.text = "Collected: %d" % score
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
@@ -47,9 +53,15 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 	if global_position.y > FALL_LIMIT:
+		_reset_level()
 		global_position = start_position
 		velocity = Vector2.ZERO
 		walk_timer = 0.0
 		use_alt_sprite = false
 		sprite.texture = CAT_NORMAL
-		
+
+
+func _reset_level() -> void:
+	score = 0
+	_update_hud()
+	get_tree().call_group("collectibles", "reset_collectible")

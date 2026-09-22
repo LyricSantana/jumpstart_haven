@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://74shoglg03xs" path="res://blueHover.png" id="3_vdywr"]
 [ext_resource type="FontFile" uid="uid://ckt83s47banje" path="res://assets/pixelFont.ttf" id="4_k1na2"]
 
-[node name="StartScreen" type="Control" unique_id=467996177]
+[node name="UI_screen" type="Control" unique_id=467996177]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -31,13 +31,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -70.0
-offset_top = -27.5
-offset_right = -19.0
-offset_bottom = -10.5
+offset_left = -146.0
+offset_top = 142.00003
+offset_right = -95.0
+offset_bottom = 159.00003
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(4, 4)
+scale = Vector2(6, 6)
 texture_normal = ExtResource("1_afy8x")
 texture_pressed = ExtResource("2_k1na2")
 texture_hover = ExtResource("3_vdywr")
@@ -47,16 +47,37 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 6.25
-offset_top = -0.125
-offset_right = -6.75
-offset_bottom = -3.125
+offset_left = 9.0
+offset_top = 2.1666615
+offset_right = 14.111099
+offset_bottom = -0.8333378
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.6, 0.6)
 mouse_filter = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_k1na2")
 theme_override_font_sizes/font_size = 11
 text = "Start"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="." unique_id=1398251487]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 338.0
+offset_top = 230.0
+offset_right = -331.0
+offset_bottom = -251.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_k1na2")
+theme_override_font_sizes/font_size = 30
+text = "The kitty is very hungry. 
+Eat all the food!"
 horizontal_alignment = 1
 vertical_alignment = 1
